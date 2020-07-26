@@ -77,3 +77,10 @@ selfrow Fonts
 html,body, body > div:first-child, div#__next, div#__next > div, div#__next > div > div {
   overflow-x: hidden; 
 }
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
