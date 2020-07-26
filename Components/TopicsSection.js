@@ -4,7 +4,7 @@ import { MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask } from '
 const ProjectsPage = () => {
 	return (
 		<section className="text-center my-5">
-			<h2 className="h1-responsive font-weight-bold my-5 sr-blue">Topics</h2>
+			<h2 className="heading-responsive-large font-weight-bold my-5 sr-blue">Topics</h2>
 
 			<MDBRow className="d-flex justify-content-center flex-row-reverse ">
 				<MDBCol md="6" xl="5" className="mb-4 my-auto">

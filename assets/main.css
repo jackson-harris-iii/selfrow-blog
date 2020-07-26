@@ -77,6 +77,12 @@ selfrow Fonts
   font-weight: 900;
 }
 
+@media (max-width: 769.9px) {
+ .home-hero {
+  font-size: 17vw !important;
+  } 
+}
+
 html,body, body > div:first-child, div#__next, div#__next > div, div#__next > div > div {
   overflow-x: hidden; 
 }
@@ -86,4 +92,7 @@ html,body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+}
+.heading-responsive-large {
+  font-size: 300%;
 }

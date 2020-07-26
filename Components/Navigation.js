@@ -35,11 +35,11 @@ class NavbarPage extends Component {
 		return (
 			<MDBNavbar
 				style={{
-					height: `80px`,
+					height: `100px`,
 					zIndex: `100`,
 				}}
 				light
-				className="sr-orange2 z-depth-0"
+				className="sr-orange2 z-depth-0 border-bottom border-dark"
 				expand="md"
 			>
 				<MDBContainer className="sr-orange2">
