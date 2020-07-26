@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Raleway:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap');
+
+/* .brandFont {
+  font-family: 'Domine', serif;
+  color: #2B76D9  !important;
+} */
+
+
+/*----------------------------------
+selfrow Color Palate 
+----------------------------------*/
+
+.sr-blue{
+  color: #0B1C48 !important;
+}
+.sr-blue-bg{
+  background-color: #0B1C48;
+}
+.sr-teal{
+  color: #016367 !important;
+}
+.sr-orange1 {
+  color: #EC440C;
+}
+.sr-orange1-bg {
+  background-color: #EC440C;
+}
+.sr-orange2{
+  color: #D89C60 !important;
+}
+
+.sr-orange2-bg{
+  background-color: #D89C60 !important;
+}
+
+/*----------------------------------
+selfrow Fonts
+----------------------------------*/
+.font-montserrat, body, p {
+  font-family: 'Montserrat', sans-serif !important;   
+}
+.font-oswald {
+  font-family: 'Oswald', sans-serif !important;
+}
+.font-playfair-d{
+  font-family: 'Playfair Display', serif !important;  
+}
+.font-raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.nav-font{
+  font-size: 2em;
+  color: #0B1C48 !important;
+}
+
+.nav-font:hover {
+  color: #EC440C !important;
+}
+
+/* .footer{
+  position: fixed;
+  bottom: 0;
+} */
+
+.home-hero {
+  font-size: 12vw;
+  font-weight: 900;
+}
+
+/* html,body, body > div:first-child, div#__next, div#__next > div, div#__next > div > div {
+        height: 100%;
+} */
