@@ -69,6 +69,7 @@ selfrow Fonts
   font-weight: 900;
 }
 
-/* html,body, body > div:first-child, div#__next, div#__next > div, div#__next > div > div {
-        height: 100%;
-} */
+html,body, body > div:first-child, div#__next, div#__next > div, div#__next > div > div {
+ 
+  overflow-x: hidden; 
+}
