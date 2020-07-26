@@ -11,9 +11,7 @@ import TopicsSection from '../Components/TopicsSection'
 
 const BlogHome = (props) => (
 	<div className="sr-orange2-bg mh-100">
-		<MDBSticky>
-			<Navigation />
-		</MDBSticky>
+		<Navigation />
 		<MDBContainer>
 			<MDBJumbotron className="sr-orange2-bg z-depth-0">
 				<h1 className="home-hero sr-blue font-raleway mt-5">SELFROW</h1>
