@@ -44,7 +44,11 @@ class NavbarPage extends Component {
 			>
 				<MDBContainer className="sr-orange2">
 					<MDBNavbarBrand className="white-text py-0">
-						<img src="/oars-large-2020.png" height="80" alt="" />
+						<Link href="/">
+							<a>
+								<img src="/oars-large-2020.png" height="80" alt="" />
+							</a>
+						</Link>
 					</MDBNavbarBrand>
 					<MDBNavbarToggler>
 						<MDBHamburgerToggler
