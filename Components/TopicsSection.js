@@ -7,7 +7,7 @@ const ProjectsPage = () => {
 			<h2 className="h1-responsive font-weight-bold my-5">Topics</h2>
 
 			<MDBRow className="d-flex justify-content-center flex-row-reverse ">
-				<MDBCol md="6" xl="5" className="mb-4">
+				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBView className="overlay rounded z-depth-2" waves>
 						<img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="" className="img-fluid" />
 						<a href="#!">
@@ -36,7 +36,7 @@ const ProjectsPage = () => {
 			</MDBRow>
 
 			<MDBRow className="d-flex justify-content-center mt-5 ">
-				<MDBCol md="6" xl="5" className="mb-4">
+				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBView className="overlay rounded z-depth-2" waves>
 						<img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="" className="img-fluid" />
 						<a href="#!">
@@ -65,7 +65,7 @@ const ProjectsPage = () => {
 			</MDBRow>
 
 			<MDBRow className="d-flex justify-content-center flex-row-reverse mt-5">
-				<MDBCol md="6" xl="5" className="mb-4">
+				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBView className="overlay rounded z-depth-2" waves>
 						<img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="" className="img-fluid" />
 						<a href="#!">

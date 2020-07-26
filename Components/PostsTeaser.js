@@ -4,7 +4,7 @@ import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn
 const PostsTeaser = () => {
 	return (
 		<MDBContainer>
-			<h2 className="h1-responsive font-weight-bold text-left mb-5 ">Recent Posts</h2>
+			<h2 className="h1-responsive font-weight-bold text-left mb-5 sr-blue">Recent Posts</h2>
 			<MDBRow>
 				<MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 					<MDBView hover className="rounded z-depth-2 mb-4" waves>
@@ -12,11 +12,11 @@ const PostsTeaser = () => {
 						<MDBMask overlay="white-slight" />
 					</MDBView>
 
-					<h4 className="font-weight-bold mb-2 sr-blue text-left">
+					<h4 className="font-weight-bold mb-2 text-left">
 						<strong>Title of the news</strong>
 					</h4>
 
-					<p className="sr-blue text-left">Nam libero tempore, cum soluta nobis est eligendi optio...</p>
+					<p className="text-left">Nam libero tempore, cum soluta nobis est eligendi optio...</p>
 					<MDBBtn color="#EC440C" rounded size="md" className="float-left sr-orange1-bg">
 						Read more
 					</MDBBtn>

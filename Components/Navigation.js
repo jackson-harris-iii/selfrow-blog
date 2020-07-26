@@ -76,7 +76,7 @@ class NavbarPage extends Component {
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-								<Link href="#!">
+								<Link href="#contact-modal">
 									<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
 								</Link>
 							</MDBNavItem>

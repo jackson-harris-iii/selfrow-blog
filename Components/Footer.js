@@ -3,8 +3,8 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
 const FooterPage = () => {
 	return (
-		<MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-4 footer">
-			<MDBContainer fluid className="text-center text-md-left">
+		<MDBFooter color="sr-blue-bg" className="font-small pt-4 mt-4 footer">
+			<MDBContainer className="text-center text-md-left">
 				<MDBRow>
 					<MDBCol md="6">
 						<h5 className="title text-left">Footer Content</h5>
@@ -30,7 +30,7 @@ const FooterPage = () => {
 				</MDBRow>
 			</MDBContainer>
 			<div className="footer-copyright text-center py-3">
-				<MDBContainer fluid>
+				<MDBContainer >
 					&copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> selfrow.com </a>
 				</MDBContainer>
 			</div>
