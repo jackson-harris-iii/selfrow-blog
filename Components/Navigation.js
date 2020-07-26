@@ -53,7 +53,7 @@ class NavbarPage extends Component {
 							onClick={() => this.toggleSingleCollapse('collapse1')}
 						/>
 					</MDBNavbarToggler>
-					<MDBCollapse isOpen={this.state.collapse3} isOpen={this.state.isOpen} navbar>
+					<MDBCollapse className='nav-blur' isOpen={this.state.collapse3} isOpen={this.state.isOpen} navbar>
 						<MDBNavbarNav right>
 							<MDBNavItem>
 								<Link href="/">

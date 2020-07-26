@@ -59,6 +59,11 @@ selfrow Fonts
   color: #EC440C !important;
 }
 
+.nav-blur {
+   /* Add the blur effect */
+  backdrop-filter: blur(8px);
+  background-color: rgba(216, 156, 96, .7)
+}
 /* .footer{
   position: fixed;
   bottom: 0;
@@ -70,6 +75,5 @@ selfrow Fonts
 }
 
 html,body, body > div:first-child, div#__next, div#__next > div, div#__next > div > div {
- 
   overflow-x: hidden; 
 }

@@ -3,9 +3,9 @@ import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn
 
 const PostsTeaser = () => {
 	return (
-		<MDBCard className="px-5 pb-5 sr-orange2-bg z-depth-0">
+		<MDBCard className="px-5-md pb-5 sr-orange2-bg z-depth-0">
 			<MDBCardBody className="text-center">
-				<h2 className="h1-responsive font-weight-bold text-left my-5 ">Recent posts</h2>
+				<h2 className="h1-responsive font-weight-bold text-left mb-5 ">Recent posts</h2>
 				<MDBRow>
 					<MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 						<MDBView hover className="rounded z-depth-2 mb-4" waves>
