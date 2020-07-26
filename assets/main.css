@@ -20,6 +20,9 @@ selfrow Color Palate
 .sr-teal{
   color: #016367 !important;
 }
+.sr-teal-bg{
+  background-color: #016367 !important;
+}
 .sr-orange1 {
   color: #EC440C;
 }

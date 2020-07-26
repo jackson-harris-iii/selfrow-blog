@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 export default function Layout({ children }) {
 	return (
-		<div>
+		<div className="sr-orange2-bg mh-100">
 			<Navigation />
 
 			<main>{children}</main>

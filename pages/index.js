@@ -9,16 +9,16 @@ import PostsTeaser from '../Components/PostsTeaser'
 import TopicsSection from '../Components/TopicsSection'
 
 const BlogHome = (props) => (
-	<div className="sr-orange2-bg mh-100">
 		<Layout>
 		<MDBContainer>
 			<MDBJumbotron className="sr-orange2-bg z-depth-0">
 				<h1 className="home-hero sr-blue font-raleway mt-5">SELFROW</h1>
-				<h2 className="sr-blue font-playfair-d font-italic">Articles, resources and community for freelancers.</h2>
+				<h2 className="sr-teal font-playfair-d font-italic">Articles, resources and community for freelancers.</h2>
 			</MDBJumbotron>
 		</MDBContainer>
 		<MDBContainer className="sr-orange2-bg">
-			<PostsTeaser />
+      <PostsTeaser
+      recentPosts={props.posts.results} />
 			<TopicsSection />
 		</MDBContainer>
 
@@ -26,13 +26,15 @@ const BlogHome = (props) => (
     <h1>{RichText.asText(props.home.data.headline)}</h1>
     <p>{RichText.asText(props.home.data.description)}</p> */}
 		</Layout>
-	</div>
 );
 
 BlogHome.getInitialProps = async context => {
   const home = await client.getSingle('blog_home')
+  const posts = await client.query(Prismic.Predicates.at('document.type', 'post'), {
+		orderings: '[my.post.date desc]',
+	});
 
-  return { home }
+  return { home, posts }
 }
 
 export default BlogHome
