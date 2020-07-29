@@ -6,10 +6,10 @@ import { client } from '../prismic-configuration'
 import {MDBContainer, MDBRow, MDBCol, MDBJumbotron, MDBSticky} from 'mdbreact'
 import Layout from '../Components/Layout';
 import PostsTeaser from '../Components/PostsTeaser'
-import TopicsSection from '../Components/TopicsSection'
+import InfoGroup from '../Components/InfoGroup'
 
 const BlogHome = (props) => (
-		<Layout>
+	<Layout>
 		<MDBContainer>
 			<MDBJumbotron className="sr-orange2-bg z-depth-0">
 				<h1 className="home-hero sr-blue font-raleway mt-5">SELFROW</h1>
@@ -17,15 +17,14 @@ const BlogHome = (props) => (
 			</MDBJumbotron>
 		</MDBContainer>
 		<MDBContainer className="sr-orange2-bg">
-      <PostsTeaser
-      recentPosts={props.posts.results} />
-			<TopicsSection />
+			<PostsTeaser recentPosts={props.posts.results} />
+			<InfoGroup groups={props.topicsinfogroups.results} />
 		</MDBContainer>
 
 		{/* <img src={props.home.data.image.url} alt="avatar image" />
     <h1>{RichText.asText(props.home.data.headline)}</h1>
     <p>{RichText.asText(props.home.data.description)}</p> */}
-		</Layout>
+	</Layout>
 );
 
 BlogHome.getInitialProps = async context => {
@@ -33,8 +32,16 @@ BlogHome.getInitialProps = async context => {
   const posts = await client.query(Prismic.Predicates.at('document.type', 'post'), {
 		orderings: '[my.post.date desc]',
 	});
+	const topicsinfogroups = await client.query(
+		Prismic.Predicates.at('document.type', 'info_group'), {
+			orderings: '[my.post.date]',
+			}
+		// Prismic.Predicates.at('document.tags', ['homepage'],['topics section']), {
+		// 	orderings: '[my.post.date]',
+		// 	}	
+	);
 
-  return { home, posts }
+  return { home, posts, topicsinfogroups };
 }
 
 export default BlogHome
