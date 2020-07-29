@@ -35,8 +35,7 @@ const Group = (props) => {
 }
 
 const InfoGroup = (props) => {
-	var PrismicDOM = require('prismic-dom');
-	
+
 	return (
 		<section className="text-center my-5">
 			<h2 className="heading-responsive-large font-weight-bold my-5 sr-blue">Topics</h2>
