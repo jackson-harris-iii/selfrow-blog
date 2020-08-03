@@ -58,7 +58,7 @@ const InfoGroup = (props) => {
 			<MDBRow className="d-flex justify-content-center mt-5 ">
 				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBView className="overlay rounded" waves>
-						<img src="body.png" alt="" className="img-fluid" />
+						<img src="/body.png" alt="" className="img-fluid" />
 						<a href="#!"></a>
 					</MDBView>
 				</MDBCol>
@@ -79,7 +79,7 @@ const InfoGroup = (props) => {
 			<MDBRow className="d-flex justify-content-center flex-row-reverse mt-5">
 				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBView className="overlay rounded" waves>
-						<img src="service.png" alt="" className="img-fluid" />
+						<img src="/service.png" alt="" className="img-fluid" />
 						<a href="#!">
 							<MDBMask overlay="white-slight" />
 						</a>

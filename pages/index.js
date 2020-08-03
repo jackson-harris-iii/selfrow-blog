@@ -10,12 +10,14 @@ import InfoGroup from '../Components/InfoGroup'
 
 const BlogHome = (props) => (
 	<Layout>
-		<MDBContainer>
+		
+		<MDBContainer>			
 			<MDBJumbotron className="sr-orange2-bg z-depth-0">
 				<h1 className="home-hero sr-blue font-raleway mt-5">SELFROW</h1>
-				<h2 className="sr-teal font-playfair-d font-italic">Articles, resources and community for freelancers.</h2>
+				<h2 className="sr-teal font-playfair-d font-italic">Thoughts about Mind, Body, and Service.</h2>
 			</MDBJumbotron>
 		</MDBContainer>
+
 		<MDBContainer className="sr-orange2-bg">
 			<PostsTeaser recentPosts={props.posts.results} />
 			<InfoGroup groups={props.topicsinfogroups.results} />
@@ -40,6 +42,8 @@ BlogHome.getInitialProps = async context => {
 		// 	orderings: '[my.post.date]',
 		// 	}	
 	);
+	
+	console.log(topicsinfogroups);
 
   return { home, posts, topicsinfogroups };
 }
