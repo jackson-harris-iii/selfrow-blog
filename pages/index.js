@@ -10,8 +10,7 @@ import InfoGroup from '../Components/InfoGroup'
 
 const BlogHome = (props) => (
 	<Layout>
-		
-		<MDBContainer>			
+		<MDBContainer>
 			<MDBJumbotron className="sr-orange2-bg z-depth-0">
 				<h1 className="home-hero sr-blue font-raleway mt-5">SELFROW</h1>
 				<h2 className="sr-teal font-playfair-d font-italic">Thoughts about Mind, Body, and Service.</h2>
@@ -19,8 +18,11 @@ const BlogHome = (props) => (
 		</MDBContainer>
 
 		<MDBContainer className="sr-orange2-bg">
+			{console.log(props.posts.results)
+			
+			}
 			<PostsTeaser recentPosts={props.posts.results} />
-			<InfoGroup groups={props.topicsinfogroups.results} />
+			<InfoGroup infoGrps={props.topicsinfogroups.results} />
 		</MDBContainer>
 
 		{/* <img src={props.home.data.image.url} alt="avatar image" />

@@ -6,12 +6,12 @@ const FooterPage = () => {
 		<MDBFooter color="sr-blue-bg" className="font-small pt-4 mt-4 footer">
 			<MDBContainer className="text-center text-md-left">
 				<MDBRow>
-					<MDBCol md="6">
+					{/* <MDBCol md="6">
 						<h5 className="title text-left">Footer Content</h5>
 						<p>Here you can use rows and columns here to organize your footer content.</p>
-					</MDBCol>
+					</MDBCol> */}
 					<MDBCol md="6">
-						<h5 className="title text-left">Links</h5>
+						{/* <h5 className="title text-left">Links</h5>
 						<ul>
 							<li className="text-left list-unstyled">
 								<a href="#!">Link 1</a>
@@ -25,7 +25,7 @@ const FooterPage = () => {
 							<li className="text-left list-unstyled">
 								<a href="#!">Link 4</a>
 							</li>
-						</ul>
+						</ul> */}
 					</MDBCol>
 				</MDBRow>
 			</MDBContainer>

@@ -53,7 +53,7 @@ const PostsTeaser = (props) => {
 					</MDBBtn>
 				</MDBCol>
 
-				<MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+				{/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 					<MDBView hover className="rounded z-depth-2 mb-4" waves>
 						<img className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" alt="" />
 						<MDBMask overlay="white-slight" />
@@ -67,7 +67,7 @@ const PostsTeaser = (props) => {
 					<MDBBtn color="#EC440C" rounded size="md" className="float-left sr-orange1-bg">
 						Read more
 					</MDBBtn>
-				</MDBCol>
+				</MDBCol> */}
 			</MDBRow>
 
 			<MDBRow>
