@@ -37,7 +37,7 @@ const PostsTeaser = (props) => {
 					return <Teaser key={post.uid} info={post} />;
 				})}
 
-				<MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+				{/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 					<MDBView hover className="rounded z-depth-2 mb-4" waves>
 						<img className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" alt="" />
 						<MDBMask overlay="white-slight" />
@@ -51,7 +51,7 @@ const PostsTeaser = (props) => {
 					<MDBBtn color="#EC440C" rounded size="md" className="float-left sr-orange1-bg">
 						Read more
 					</MDBBtn>
-				</MDBCol>
+				</MDBCol> */}
 
 				{/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 					<MDBView hover className="rounded z-depth-2 mb-4" waves>
@@ -73,9 +73,9 @@ const PostsTeaser = (props) => {
 			<MDBRow>
 				<MDBCol className="text-right mt-5-md sr-blue">
 					<a>
-						<h2 className="font-playfair-d text-right mb-5-md font-italic d-inline">All Posts </h2>
+						<h2 className="font-playfair-d text-right mb-5-md font-italic d-inline">all posts >> </h2>
 					</a>
-					<MDBIcon icon="angle-double-right" className="d-inline" />
+					{/* <MDBIcon icon="angle-double-right" className="d-inline" /> */}
 				</MDBCol>
 			</MDBRow>
 		</MDBContainer>

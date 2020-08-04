@@ -39,7 +39,7 @@ const InfoGroup = (props) => {
 
 	return (
 		<section className="text-center my-5">
-			<h2 className="heading-responsive-large font-weight-bold my-5 sr-blue">Topics</h2>
+			<h2 className="font-weight-bold my-5 sr-blue display-4">Points of Interest</h2>
 
 			<MDBRow className="d-flex justify-content-center flex-row-reverse mt-5">
 				{
@@ -57,18 +57,20 @@ const InfoGroup = (props) => {
 							alt=""
 							className="img-fluid"
 						/>
-						<a href="#!">
+						{/* <a href="#!">
 							<MDBMask overlay="white-slight" />
-						</a>
+						</a> */}
 					</MDBView>
 				</MDBCol>
 				{/* text section */}
 				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBCardBody className="pb-0">
-						<h3 className="font-weight-bold mb-3 sr-blue font-playfair-d">MIND</h3>
-						<p>
-							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit cupidatat
-							proident voluptatem quia numquam.
+						<h3 className="font-weight-bold mb-3 sr-blue font-playfair-d display-4">MIND</h3>
+						<p className="font-weight-bold text-left">
+							“Iron rusts from disuse, stagnant water loses its purity, and in cold weather becomes frozen; even so does
+							inaction sap the vigors of the mind.”
+							<br />
+							<br />- Leonardo da Vinci
 						</p>
 						<MDBBtn size="lg" className="font-weight-bold font-oswald sr-orange2 sr-teal-bg" rounded>
 							See Posts
@@ -90,10 +92,11 @@ const InfoGroup = (props) => {
 				</MDBCol>
 				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBCardBody className="pb-0">
-						<h4 className="font-weight-bold mb-3 sr-blue font-playfair-d">BODY</h4>
-						<p>
-							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit cupidatat
-							proident voluptatem quia numquam.
+						<h4 className="font-weight-bold mb-3 sr-blue font-playfair-d display-4">BODY</h4>
+						<p className="font-weight-bold text-left">
+							“The body is the instrument of our hold on the world.” <br />
+							<br />
+							― Simone de Beauvoir, The Second Sex
 						</p>
 						<MDBBtn size="lg" className="font-weight-bold font-oswald sr-orange2 sr-teal-bg" rounded>
 							See Posts
@@ -117,10 +120,12 @@ const InfoGroup = (props) => {
 				</MDBCol>
 				<MDBCol md="6" xl="5" className="mb-4 my-auto">
 					<MDBCardBody className="pb-0">
-						<h4 className="font-weight-bold mb-3 sr-blue font-playfair-d">SERVICE</h4>
-						<p>
-							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit cupidatat
-							proident voluptatem quia numquam.
+						<h4 className="font-weight-bold mb-3 sr-blue font-playfair-d display-4">SERVICE</h4>
+						<p className="font-weight-bold text-left">
+							“I slept and dreamt that life was joy. I awake and saw that life was service. I acted and behold, service
+							was joy.”
+							<br />
+							<br /> -Rabindranath Tagore
 						</p>
 						<MDBBtn size="lg" className="font-weight-bold font-oswald sr-orange2 sr-teal-bg" rounded>
 							See Posts
