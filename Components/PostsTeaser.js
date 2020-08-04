@@ -36,38 +36,6 @@ const PostsTeaser = (props) => {
 				{props.recentPosts.slice(0, 3).map((post) => {
 					return <Teaser key={post.uid} info={post} />;
 				})}
-
-				{/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-					<MDBView hover className="rounded z-depth-2 mb-4" waves>
-						<img className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" alt="" />
-						<MDBMask overlay="white-slight" />
-					</MDBView>
-
-					<h4 className="font-weight-bold mb-2 sr-teal text-left">
-						<strong>Title of the news</strong>
-					</h4>
-
-					<p className="sr-blue text-left">Nam libero tempore, cum soluta nobis est eligendi optio...</p>
-					<MDBBtn color="#EC440C" rounded size="md" className="float-left sr-orange1-bg">
-						Read more
-					</MDBBtn>
-				</MDBCol> */}
-
-				{/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-					<MDBView hover className="rounded z-depth-2 mb-4" waves>
-						<img className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" alt="" />
-						<MDBMask overlay="white-slight" />
-					</MDBView>
-
-					<h4 className="font-weight-bold mb-2 sr-blue text-left">
-						<strong>Title of the news</strong>
-					</h4>
-
-					<p className="sr-blue text-left">Nam libero tempore, cum soluta nobis est eligendi optio...</p>
-					<MDBBtn color="#EC440C" rounded size="md" className="float-left sr-orange1-bg">
-						Read more
-					</MDBBtn>
-				</MDBCol> */}
 			</MDBRow>
 
 			<MDBRow>

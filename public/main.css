@@ -24,7 +24,7 @@ selfrow Color Palate
   background-color: #016367 !important;
 }
 .sr-orange1 {
-  color: #EC440C;
+  color: #EC440C !important;
 }
 .sr-orange1-bg {
   background-color: #EC440C;
@@ -41,7 +41,8 @@ selfrow Color Palate
 selfrow Fonts
 ----------------------------------*/
 .font-montserrat, body, p {
-  font-family: 'Montserrat', sans-serif !important;   
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;   
 }
 .font-oswald {
   font-family: 'Oswald', sans-serif !important;
@@ -51,6 +52,11 @@ selfrow Fonts
 }
 .font-raleway {
   font-family: 'Raleway', sans-serif !important;
+}
+
+a {
+  color: #016367 !important;
+  text-decoration: underline;
 }
 
 .nav-font{

@@ -35,8 +35,10 @@ class NavbarPage extends Component {
 		return (
 			<MDBNavbar
 				style={{
-					height: `100px`,
+					marginTop: '0px',
 					zIndex: `100`,
+					position: 'absolute',
+					width: '100vw',
 				}}
 				light
 				className="sr-orange2 z-depth-0 border-bottom border-dark"

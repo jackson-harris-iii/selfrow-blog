@@ -4,10 +4,16 @@ import { client } from '../prismic-configuration';
 import Link from 'next/link';
 import Layout from "../Components/Layout"
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol,  MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBIcon } from "mdbreact";
+import Moment from "moment"
 
 
-const Post = (props) => (
-	<Layout>
+const Post = (props) => {
+	const date = Date(props.post.data.date);
+	const formattedDate = Moment(date).format('LL');
+
+	return (
+	
+		<Layout>
 		<MDBContainer className="mt-5">
 			{/* <Link href="/">
 				<MDBIcon icon="backward" />
@@ -16,19 +22,21 @@ const Post = (props) => (
 				<MDBCol size="12" className="d-flex justify-content-center mb-4">
 					<img className="img-fluid z-depth-2" src={props.post.data.post_main_image.url} />
 				</MDBCol>
-				<MDBCol size="8" className="mx-auto">
+				<MDBCol lg="10" className="mx-auto">
 					<h1 className="font-playfair-d mb-4">{RichText.render(props.post.data.title)}</h1>
 
 					<h2>{RichText.render(props.post.data.author)}</h2>
 
-					<span>{Date(props.post.data.date).toString()}</span>
-
+					<span>{formattedDate}</span>
+					
+					<br/><br/>
 					{RichText.render(props.post.data.post_body)}
 				</MDBCol>
 			</MDBRow>
 		</MDBContainer>
-	</Layout>
-);
+		</Layout>
+	)	
+};
 
 Post.getInitialProps = async (context) => {
 	const { uid } = context.query;

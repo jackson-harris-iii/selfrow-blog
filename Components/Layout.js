@@ -7,7 +7,7 @@ export default function Layout({ children }) {
 		<div className="sr-orange2-bg mh-100">
 			<Navigation />
 
-			<main>{children}</main>
+			<main className="pt-5">{children}</main>
 
 			<Footer />
 		</div>
