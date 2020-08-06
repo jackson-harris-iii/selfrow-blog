@@ -7,10 +7,15 @@ import Link from 'next/link';
 const Teaser = (props) => {
   return (
 		<MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-			<MDBView hover className="rounded z-depth-2 mb-4" waves>
-				<img className="img-fluid" src={props.info.data.post_main_image.url} alt="" />
+			<Link href={hrefResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
+				<a>
+			<MDBView hover className="rounded z-depth-0 mb-4" waves>
+			
+						<img className="img-fluid" src={props.info.data.post_main_image.url} alt="" />		
 				<MDBMask overlay="white-slight" />
 			</MDBView>
+				</a>
+			</Link>
 
 			<h4 className="font-weight-bolder mb-2 sr-blue font-oswald text-left">
 				{RichText.asText(props.info.data.title)}

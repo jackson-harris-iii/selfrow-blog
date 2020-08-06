@@ -19,11 +19,11 @@ const Post = (props) => {
 				<MDBIcon icon="backward" />
 			</Link> */}
 			<MDBRow className="">
-				<MDBCol size="12" className="d-flex justify-content-center mb-4">
-					<img className="img-fluid z-depth-2" src={props.post.data.post_main_image.url} />
+				<MDBCol md="8" className="d-flex justify-content-center mb-4 mx-auto">
+					<img className="img-fluid z-depth-0" src={props.post.data.post_main_image.url} />
 				</MDBCol>
 				<MDBCol lg="10" className="mx-auto">
-					<h1 className="font-playfair-d mb-4">{RichText.render(props.post.data.title)}</h1>
+					<h1 className="font-playfair-d mb-4 font-weight-bolder">{RichText.render(props.post.data.title)}</h1>
 
 					<h2>{RichText.render(props.post.data.author)}</h2>
 

@@ -39,6 +39,8 @@ class NavbarPage extends Component {
 					zIndex: `100`,
 					position: 'absolute',
 					width: '100vw',
+					backdropFilter: 'blur(8px)',
+					backgroundColor: 'rgba(216, 156, 96, .7)'
 				}}
 				light
 				className="sr-orange2 z-depth-0 border-bottom border-dark"

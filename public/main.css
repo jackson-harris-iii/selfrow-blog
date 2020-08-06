@@ -44,6 +44,9 @@ selfrow Fonts
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 500;   
 }
+strong {
+  font-weight: 700;
+}
 .font-oswald {
   font-family: 'Oswald', sans-serif !important;
 }
@@ -70,8 +73,8 @@ a {
 
 .nav-blur {
    /* Add the blur effect */
-  backdrop-filter: blur(8px);
-  background-color: rgba(216, 156, 96, .7)
+  /* backdrop-filter: blur(8px);
+  background-color: rgba(216, 156, 96, .7) */
 }
 /* .footer{
   position: fixed;
