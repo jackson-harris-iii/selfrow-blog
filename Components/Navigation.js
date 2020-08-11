@@ -9,6 +9,10 @@ import {
 	MDBContainer,
 	MDBHamburgerToggler,
 	MDBNavbarToggler,
+	MDBIcon,
+	MDBBtn,
+	MDBRow,
+	MDBCol,
 } from 'mdbreact';
 import Link from 'next/link';
 
@@ -40,7 +44,7 @@ class NavbarPage extends Component {
 					position: 'absolute',
 					width: '100vw',
 					backdropFilter: 'blur(8px)',
-					backgroundColor: 'rgba(216, 156, 96, .7)'
+					backgroundColor: 'rgba(216, 156, 96, .7)',
 				}}
 				light
 				className="sr-orange2 z-depth-0 border-bottom border-dark"
@@ -87,6 +91,22 @@ class NavbarPage extends Component {
 								<Link href="#contact-modal">
 									<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
 								</Link>
+							</MDBNavItem>
+							<MDBNavItem className="my-auto">
+								<MDBContainer>
+									<MDBRow>
+										<MDBCol>
+											<a href="https://www.facebook.com/selfrowblog" target="blank">
+												<MDBIcon size="2x" fab icon="facebook" />
+											</a>
+										</MDBCol>
+										<MDBCol>
+											<a href="https://instagram.com/selfrow_official" target="blank">
+												<MDBIcon size="2x" fab icon="instagram" />
+											</a>
+										</MDBCol>
+									</MDBRow>
+								</MDBContainer>
 							</MDBNavItem>
 						</MDBNavbarNav>
 					</MDBCollapse>
