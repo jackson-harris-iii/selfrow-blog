@@ -35,7 +35,7 @@ const Teaser = (props) => {
 
 const PostsTeaser = (props) => {
 	return (
-		<MDBContainer>
+		<MDBContainer style={{ marginBottom: '10rem!important' }}>
 			<h2 className="heading-responsive-large font-weight-bold text-left mb-5 sr-blue">Recent Posts</h2>
 			<MDBRow>
 				{props.recentPosts.slice(0, 3).map((post) => {

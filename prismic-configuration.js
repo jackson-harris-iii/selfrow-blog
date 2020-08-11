@@ -14,7 +14,7 @@ export const accessToken = ''
 // Modify as your project grows to handle any new routes you've made
 export const linkResolver = (doc) => {
   if (doc.type === 'post') {
-    return `/blog/${doc.uid}`
+    return `/posts/${doc.uid}`
   }
   return '/'
 }
@@ -22,7 +22,7 @@ export const linkResolver = (doc) => {
 // Additional helper function for Next/Link components
 export const hrefResolver = (doc) => {
   if (doc.type === 'post') {
-    return `/post?uid=${doc.uid}`
+    return `/posts?uid=${doc.uid}`
   }
   return '/'
 }
