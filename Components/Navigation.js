@@ -15,6 +15,7 @@ import {
 	MDBCol,
 } from 'mdbreact';
 import Link from 'next/link';
+import { withRouter } from 'next/router';
 
 class NavbarPage extends Component {
 	state = {
@@ -68,29 +69,29 @@ class NavbarPage extends Component {
 					<MDBCollapse className="nav-blur" isOpen={this.state.collapse3} isOpen={this.state.isOpen} navbar>
 						<MDBNavbarNav className="dropdown-menu-right">
 							<MDBNavItem>
-								<Link href="/">
+								<Link href="/mind">
 									<a className="nav-link font-oswald nav-font font-weight-bolder">Mind</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-								<Link href="#!">
+								<Link href="/body">
 									<a className="nav-link font-oswald nav-font font-weight-bolder">Body</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-								<Link href="#!">
+								<Link href="/service">
 									<a className="nav-link font-oswald nav-font font-weight-bolder">Service</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-								<Link href="#!">
+								<Link href="/about">
 									<a className="nav-link font-oswald nav-font font-weight-bolder">About</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-								<Link href="#contact-modal">
-									<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
-								</Link>
+									<Link href={`${router.pathname}?contact=contact`} as={router.pathname}>
+										<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
+									</Link>
 							</MDBNavItem>
 							<MDBNavItem className="my-auto">
 								<MDBContainer>
@@ -116,4 +117,4 @@ class NavbarPage extends Component {
 	}
 }
 
-export default NavbarPage;
+export default withRouter(NavbarPage);
