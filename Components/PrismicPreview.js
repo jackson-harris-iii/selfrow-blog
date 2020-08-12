@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-export default PrismicPreview = () => {
+const PrismicPreview = () => {
 	return (
 			<Head>
 				<script
@@ -16,3 +16,5 @@ export default PrismicPreview = () => {
 		</Head>
 	);
 }
+
+export default PrismicPreview

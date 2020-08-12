@@ -89,7 +89,7 @@ class NavbarPage extends Component {
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-									<Link href={`${router.pathname}?contact=contact`} as={router.pathname}>
+									<Link href={`${withRouter.pathname}?contact=contact`} as={withRouter.pathname}>
 										<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
 									</Link>
 							</MDBNavItem>
