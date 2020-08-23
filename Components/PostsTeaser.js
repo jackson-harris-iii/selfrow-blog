@@ -77,9 +77,11 @@ const PostsTeaser = (props) => {
 
 			<MDBRow>
 				<MDBCol className="text-right mt-5-md sr-blue">
-					<a>
-						<h2 className="font-playfair-d text-right mb-5-md font-italic d-inline">all posts >> </h2>
-					</a>
+					<Link href='/blog'>
+						<a>
+							<h2 className="font-playfair-d text-right mb-5-md font-italic d-inline">all posts >> </h2>
+						</a>
+					</Link>
 					{/* <MDBIcon icon="angle-double-right" className="d-inline" /> */}
 				</MDBCol>
 			</MDBRow>
