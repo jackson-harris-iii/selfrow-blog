@@ -39,7 +39,8 @@ const InfoGroup = (props) => {
 
 	return (
 		<section className="text-center my-5">
-			<h2 className="font-weight-bold my-5 sr-blue display-4">Points of Interest</h2>
+			<hr />
+			<h2 className="font-weight-bold my-5 sr-blue display-1">Points of Interest</h2>
 
 			<MDBRow className="d-flex justify-content-center flex-row-reverse mt-5">
 				{

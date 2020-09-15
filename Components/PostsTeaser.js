@@ -36,7 +36,7 @@ const Teaser = (props) => {
 	}
 	else {
 		return (
-			<MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+			<MDBCol lg="4" md="8" className="mb-lg-0 mb-4 mx-auto">
 				<Link href={hrefResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
 					<a>
 						<MDBView hover className="rounded z-depth-0 mb-4" waves>
