@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 import {
 	MDBNavbar,
 	MDBNavbarBrand,
@@ -15,28 +15,32 @@ import {
 	MDBCol,
 } from 'mdbreact';
 import Link from 'next/link';
-import { withRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
-class NavbarPage extends Component {
-	state = {
-		// collapse1: false,
-		// collapseID: '',
-		isOpen: false,
-	};
+const NavbarPage = (props) => {
+	// state = {
+	// 	// collapse1: false,
+	// 	// collapseID: '',
+	// 	isOpen: false, 
+	// };
 
-	toggleCollapse = (collapseID) => () => {
-		this.setState((prevState) => ({ collapseID: prevState.collapseID !== collapseID ? collapseID : '' }));
-	};
+	const [collapseID, setCollapseID] = useState('')
+	const [isCollapsed1, setIsCollapsed1] = useState(false)
+	const router = useRouter();
 
-	toggleSingleCollapse = (collapseId) => {
-		this.setState({
-			...this.state,
-			[collapseId]: !this.state[collapseId],
-    });
-    this.setState({ isOpen: !this.state.isOpen });
-	};
+	// toggleCollapse = (collapseID) => () => {
+	// 	this.setState((prevState) => ({ collapseID: prevState.collapseID !== collapseID ? collapseID : '' }));
+	// };
 
-	render() {
+	// toggleSingleCollapse = (collapseId) => {
+	// 	this.setState({
+	// 		...this.state,
+	// 		[collapseId]: !this.state[collapseId],
+  //   });
+  //   this.setState({ isOpen: !this.state.isOpen });
+	// };
+
+
 		return (
 			<MDBNavbar
 				style={{
@@ -63,10 +67,10 @@ class NavbarPage extends Component {
 						<MDBHamburgerToggler
 							color="#016367"
 							id="hamburger1"
-							onClick={() => this.toggleSingleCollapse('collapse1')}
+							onClick={() => setIsCollapsed1((isCollapsed1) => !isCollapsed1)}
 						/>
 					</MDBNavbarToggler>
-					<MDBCollapse className="nav-blur" isOpen={this.state.collapse3} isOpen={this.state.isOpen} navbar>
+					<MDBCollapse className="nav-blur" isOpen={isCollapsed1} navbar>
 						<MDBNavbarNav className="dropdown-menu-right">
 							<MDBNavItem>
 								<Link href="/mind">
@@ -89,7 +93,7 @@ class NavbarPage extends Component {
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-									<Link href={`${withRouter.pathname}?contact=contact`} as={withRouter.pathname}>
+									<Link href={`${router.pathname}?contact=contact`} as={router.pathname}>
 										<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
 									</Link>
 							</MDBNavItem>
@@ -115,6 +119,5 @@ class NavbarPage extends Component {
 			</MDBNavbar>
 		);
 	}
-}
 
-export default withRouter(NavbarPage);
+export default NavbarPage;

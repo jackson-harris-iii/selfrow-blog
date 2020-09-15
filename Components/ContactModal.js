@@ -11,7 +11,6 @@ import {
 	MDBIcon,
 } from 'mdbreact';
 import axios from 'axios';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const ModalPage = () => {
@@ -72,7 +71,7 @@ const ModalPage = () => {
 		setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 		axios({
 			method: 'POST',
-			url: 'https://formspree.io/mvowlqbq',
+			url: 'https://formspree.io/xnqoaded',
 			data: inputs,
 		})
 			.then((response) => {
@@ -92,36 +91,36 @@ const ModalPage = () => {
 	return (
 		<MDBContainer>
 			<MDBModal isOpen={!!router.query.contact} toggle={modalToggle}>
-				<MDBModalHeader toggle={modalToggle} className={'border-0'} />
-				<MDBModalBody>
+				{/* <MDBModalHeader toggle={modalToggle} className={'border-0'} /> */}
+				<MDBModalBody className="sr-blue-bg">
 					<MDBRow className={'justify-content-center'}>
 						<MDBCol size="10">
 							<form onSubmit={handleOnSubmit}>
-								<p className="h2 text-center mb-4 font-rubik lc-black">Contact Us</p>
-								<label htmlFor="name" className="lc-blue1 font-karla">
+								<p className="h2 text-center mb-4 font-playfair-d sr-orange2 mt-3">Contact Us</p>
+								<label htmlFor="name" className="font-oswald sr-orange2">
 									Your name
 								</label>
-								<input type="text" id="defaultFormContactNameEx" className="form-control" />
+								<input type="text" id="defaultFormContactNameEx" className="form-control sr-teal-bg text-white" />
 								<br />
-								<label htmlFor="email" className="lc-blue1 font-karla">
+								<label htmlFor="email" className="font-oswald sr-orange2">
 									Email
 								</label>
 								<input
 									type="email"
 									id="email"
-									className="form-control"
+									className="form-control sr-teal-bg text-white"
 									name="_replyto"
 									onChange={handleOnChange}
 									required
 									value={inputs.email}
 								/>
 								<br />
-								<label htmlFor="defaultFormContactSubjectEx" className="lc-blue1 font-karla">
+								{/* <label htmlFor="defaultFormContactSubjectEx" className="lc-blue1 font-karla">
 									Company
 								</label>
-								<input type="text" id="defaultFormContactSubjectEx" className="form-control" />
-								<br />
-								<label htmlFor="defaultFormContactMessageEx" className="lc-blue1 font-karla" htmlFor="message">
+								<input type="text" id="defaultFormContactSubjectEx" className="form-control" /> */}
+								{/* <br /> */}
+								<label htmlFor="defaultFormContactMessageEx" className="font-oswald sr-orange2" htmlFor="message">
 									Your message
 								</label>
 								<textarea
@@ -130,16 +129,16 @@ const ModalPage = () => {
 									onChange={handleOnChange}
 									required
 									value={inputs.message}
-									className="form-control"
+									className="form-control sr-teal-bg text-white"
 									rows="3"
 								/>
 								<div className="text-center mt-4">
-									<MDBBtn color="blue darker-2" outline type="submit" disabled={status.submitting}>
+									<MDBBtn outline color="teal" type="submit" disabled={status.submitting} className="sr-orange1">
 										Send
 										<MDBIcon far icon="paper-plane" className="ml-2" />
 									</MDBBtn>
-									{status.info.error && <div className="error">Error: {status.info.msg}</div>}
-									{!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+									{status.info.error && <div className="error text-white">Error: {status.info.msg}</div>}
+									{!status.info.error && status.info.msg && <p className="text-white">{status.info.msg}</p>}
 								</div>
 							</form>
 						</MDBCol>
