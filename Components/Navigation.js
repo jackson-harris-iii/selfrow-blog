@@ -14,6 +14,8 @@ import {
 	MDBRow,
 	MDBCol,
 } from 'mdbreact';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -93,21 +95,22 @@ const NavbarPage = (props) => {
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
-									<Link href={`${router.pathname}?contact=contact`} as={router.pathname}>
-										<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
-									</Link>
+								<Link href={`${router.pathname}?contact=contact`} as={router.pathname}>
+									<a className="nav-link font-oswald nav-font font-weight-bolder">Contact</a>
+								</Link>
 							</MDBNavItem>
 							<MDBNavItem className="my-auto">
 								<MDBContainer>
 									<MDBRow>
 										<MDBCol>
 											<a href="https://www.facebook.com/selfrowblog" target="blank">
-												<MDBIcon size="2x" fab icon="facebook" />
+												{/* <MDBIcon size="2x" fab icon="facebook" /> */}
+												<FontAwesomeIcon icon={["fab", "facebook"]} />
 											</a>
 										</MDBCol>
 										<MDBCol>
 											<a href="https://instagram.com/selfrow_official" target="blank">
-												<MDBIcon size="2x" fab icon="instagram" />
+												<MDBIcon size="2x" fab fa icon="instagram" />
 											</a>
 										</MDBCol>
 									</MDBRow>

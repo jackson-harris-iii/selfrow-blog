@@ -2,7 +2,8 @@ import React from 'react';
 import { MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask } from 'mdbreact';
 import { RichText, Date } from 'prismic-reactjs'; 
 import { client, linkResolver, hrefResolver } from '../prismic-configuration';
-import Link from 'next/link';	
+import Link from 'next/link';
+import { useRouter } from 'next/router';	
 
 const Group = (props) => {
 	
@@ -36,6 +37,8 @@ const Group = (props) => {
 }
 
 const InfoGroup = (props) => {
+
+	const router = useRouter()
 
 	return (
 		<section className="text-center my-5">
@@ -73,7 +76,12 @@ const InfoGroup = (props) => {
 							<br />
 							<br />- Leonardo da Vinci
 						</p>
-						<MDBBtn size="lg" className="font-weight-bold font-oswald sr-orange2 sr-teal-bg" rounded>
+						<MDBBtn
+							size="lg"
+							className="font-weight-bold font-oswald sr-orange2 sr-teal-bg"
+							rounded
+							onClick={() => router.push('/mind')}
+						>
 							See Posts
 						</MDBBtn>
 					</MDBCardBody>
@@ -99,7 +107,12 @@ const InfoGroup = (props) => {
 							<br />
 							― Simone de Beauvoir, The Second Sex
 						</p>
-						<MDBBtn size="lg" className="font-weight-bold font-oswald sr-orange2 sr-teal-bg" rounded>
+						<MDBBtn
+							size="lg"
+							className="font-weight-bold font-oswald sr-orange2 sr-teal-bg"
+							rounded
+							onClick={() => router.push('/body')}
+						>
 							See Posts
 						</MDBBtn>
 					</MDBCardBody>
@@ -128,7 +141,12 @@ const InfoGroup = (props) => {
 							<br />
 							<br /> -Rabindranath Tagore
 						</p>
-						<MDBBtn size="lg" className="font-weight-bold font-oswald sr-orange2 sr-teal-bg" rounded>
+						<MDBBtn
+							size="lg"
+							className="font-weight-bold font-oswald sr-orange2 sr-teal-bg"
+							rounded
+							onClick={() => router.push('/service')}
+						>
 							See Posts
 						</MDBBtn>
 					</MDBCardBody>
