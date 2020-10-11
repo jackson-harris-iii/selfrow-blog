@@ -65,16 +65,20 @@ const Post = (props) => {
 				<MDBIcon icon="backward" />
 			</Link> */}
 					<MDBRow className="">
-						<MDBCol md="8" className="d-flex justify-content-center mb-4 mx-auto">
+						<MDBCol md="8" className="mt-5 d-flex justify-content-center mb-4 mx-auto">
 							<MDBView hover className="rounded z-depth-0 mb-4" waves>
-								<img className="img-fluid z-depth-0 postImage" src={props.post.data.post_main_image.url} />
+								<img
+									className="img-fluid z-depth-0 postImage"
+									src={props.post.data.post_main_image.url}
+									style={{ maxHeight: '50vh' }}
+								/>
 							</MDBView>
 						</MDBCol>
 						<MDBCol lg="10" className="mx-auto">
 							<h1 className="font-playfair-d mb-4 font-weight-bolder">{RichText.render(props.post.data.title)}</h1>
 
-							<h2>{RichText.render(props.post.data.author)}</h2>
-
+							<span>{props.post.data.author}</span>
+							<br />
 							<span>{formattedDate}</span>
 
 							<br />

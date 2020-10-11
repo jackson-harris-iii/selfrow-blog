@@ -14,16 +14,22 @@ export const accessToken = ''
 // Modify as your project grows to handle any new routes you've made
 export const linkResolver = (doc) => {
   if (doc.type === 'post') {
-    return `/posts/${doc.uid}`
-  }
+		return `/posts/${doc.uid}`;
+  } 
+  else if (doc.type === 'static_page') {
+		return `/?url_slug=${doc.url_slug}`;
+	}
   return '/'
 }
 
 // Additional helper function for Next/Link components
 export const hrefResolver = (doc) => {
   if (doc.type === 'post') {
-    return `/posts?uid=${doc.uid}`
-  }
+		return `/posts?uid=${doc.uid}`;
+  } 
+  else if (doc.type === 'static_page') {
+    return `/?url_slug=${doc.url_slug}`;
+	}
   return '/'
 }
 

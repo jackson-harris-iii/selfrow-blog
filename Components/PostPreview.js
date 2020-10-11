@@ -38,7 +38,13 @@ const PostPreview = (props) => {
 				<Link href={linkResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
 					<a>
 						<MDBView hover className="z-depth-0 mb-4" waves>
-							<img className="img-fluid" src={props.info.data.post_main_image.url} alt="" />
+							<img
+								className="img-fluid mx-auto"
+								src={props.info.data.post_main_image.url}
+								alt=""
+								style={{ maxHeight: '50vh' }}
+								center
+							/>
 							<MDBMask overlay="white-slight" />
 						</MDBView>
 					</a>
