@@ -14,7 +14,7 @@ import {
 	MDBRow,
 	MDBCol,
 } from 'mdbreact';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -104,13 +104,12 @@ const NavbarPage = (props) => {
 									<MDBRow>
 										<MDBCol>
 											<a href="https://www.facebook.com/selfrowblog" target="blank">
-												{/* <MDBIcon size="2x" fab icon="facebook" /> */}
-												<FontAwesomeIcon icon={["fab", "facebook"]} />
+												<FontAwesomeIcon size="2x" icon={faFacebook} />
 											</a>
 										</MDBCol>
 										<MDBCol>
 											<a href="https://instagram.com/selfrow_official" target="blank">
-												<MDBIcon size="2x" fab fa icon="instagram" />
+												<FontAwesomeIcon size="2x" icon={faInstagram} />
 											</a>
 										</MDBCol>
 									</MDBRow>
