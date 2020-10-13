@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { RichText, Date } from 'prismic-reactjs';
 import { client } from '../../prismic-configuration';
 import Link from 'next/link';
@@ -89,13 +89,22 @@ const Post = (props) => {
 							<br />
 							<br />
 							{RichText.render(props.post.data.post_body)}
-
+						
 							{/* attach credits to post */}
 							{props.post.data.credits
-								? (console.log(props.post.data.credits),
-								  props.post.data.credits.map((credit) => {
-										return <span>credits: {credit.text} </span>;
-								  }))
+								? (
+									<Fragment>
+												<br />
+											<span className="font-italic font-weight-light font-oswald">
+												Credits:   
+												{ props.post.data.credits.map((credit) => {
+										return (
+											' ' + credit.text + '; '
+										)})}
+										</span>
+									</Fragment>
+								  		
+								)
 								: null}
 						</MDBCol>
 					</MDBRow>
