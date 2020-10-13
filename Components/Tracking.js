@@ -5,6 +5,9 @@ const Tracking = () => {
 	return (
 		<div>
 			<Head>
+				{/* Favicon */}
+				<link rel="shortcut icon" href="/favicon.png" />
+
 				{/* Google Analytics tracking codes */}
 				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168126365-1" />
 				<script
