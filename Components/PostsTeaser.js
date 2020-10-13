@@ -24,7 +24,7 @@ const Teaser = (props) => {
 				</h4>
 
 				<p className="text-left">{RichText.asText(props.info.data.preview_blurb).slice(0, 69)}...</p>
-				<Link href={hrefResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
+				<Link href={linkResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
 					<a>
 						<MDBBtn color="#EC440C" rounded size="lg" className="font-weight-bold font-oswald sr-orange2 float-left sr-teal-bg">
 							Read more
@@ -37,7 +37,7 @@ const Teaser = (props) => {
 	else {
 		return (
 			<MDBCol lg="4" md="8" className="mb-lg-0 mb-4 mx-auto">
-				<Link href={hrefResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
+				<Link href={linkResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
 					<a>
 						<MDBView hover className="rounded z-depth-0 mb-4" waves>
 
@@ -52,7 +52,7 @@ const Teaser = (props) => {
 				</h4>
 
 				<p className="text-left">{RichText.asText(props.info.data.preview_blurb).slice(0, 69)}...</p>
-				<Link href={hrefResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
+				<Link href={linkResolver(props.info)} as={linkResolver(props.info)} passHref prefetch>
 					<a>
 						<MDBBtn color="#EC440C" rounded size="lg" className="font-weight-bold font-oswald sr-orange2 float-left sr-teal-bg">
 							Read more

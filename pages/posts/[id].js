@@ -20,7 +20,6 @@ import {
 import Moment from 'moment';
 
 const Post = (props) => {
-  
 	const date = Date(props.post.data.date);
 	const formattedDate = Moment(date).format('LL');
 
@@ -31,13 +30,11 @@ const Post = (props) => {
 					{/* <Link href="/">
 				<MDBIcon icon="backward" />
 			</Link> */}
-					{console.log(props.post)
-
-					}
+					{console.log(props.post)}
 					<MDBRow className="">
 						<MDBCol md="8" className="d-flex justify-content-center mb-4 mx-auto">
 							<MDBView hover className="rounded z-depth-0 mb-4" waves>
-								<div className='mt-5' dangerouslySetInnerHTML={{ __html: props.post.data.video_header.html }} />
+								<div className="mt-5" dangerouslySetInnerHTML={{ __html: props.post.data.video_header.html }} />
 								{/* <MDBIframe src={props.post.data.video_header.embed_url}/> */}
 							</MDBView>
 						</MDBCol>
@@ -51,11 +48,19 @@ const Post = (props) => {
 							<br />
 							<br />
 							{RichText.render(props.post.data.post_body)}
+
+							{/* attach credits to post */}
+							{props.post.data.credits
+								? (console.log(props.post.data.credits),
+								  props.post.data.credits.map((credit) => {
+										return <span>credits: {credit.text} </span>;
+								  }))
+								: null}
 						</MDBCol>
 					</MDBRow>
 				</MDBContainer>
 			</Layout>
-		)
+		);
 	}
 	else {
 		return (
@@ -84,6 +89,14 @@ const Post = (props) => {
 							<br />
 							<br />
 							{RichText.render(props.post.data.post_body)}
+
+							{/* attach credits to post */}
+							{props.post.data.credits
+								? (console.log(props.post.data.credits),
+								  props.post.data.credits.map((credit) => {
+										return <span>credits: {credit.text} </span>;
+								  }))
+								: null}
 						</MDBCol>
 					</MDBRow>
 				</MDBContainer>
